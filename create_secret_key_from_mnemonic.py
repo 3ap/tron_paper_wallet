@@ -8,6 +8,6 @@ key = key_from_seed(seed, TRON_DEFAULT_PATH)
 wallet = PrivateKey(key)
 
 with open("secret_key.txt", "w") as secret_key_file:
-    secret_key_file.write(f'{wallet}')
+    secret_key_file.write(f'{wallet}\n')
 
 print("Paper wallet recovered secret key saved.")
