@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from tronpy import Tron, keys
 from tronpy.providers import HTTPProvider
 
@@ -11,7 +12,7 @@ amount = usdt_to_sun(1.18)  # The amount of USDT to send
 secret_key = ''
 with open("secret_key.txt", "r") as secret_key_file:
     secret_key = secret_key_file.read().strip()
-    
+
 tron = Tron(HTTPProvider(api_key=api_key))
 
 contract_address = 'TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t' # USDT token on mainnet

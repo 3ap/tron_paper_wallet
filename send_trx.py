@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from tronpy import Tron, keys
 from tronpy.providers import HTTPProvider
 

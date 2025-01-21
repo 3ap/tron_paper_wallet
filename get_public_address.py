@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from tronpy import Tron, keys
 
 secret_key = ''
@@ -8,4 +9,3 @@ if secret_key:
     wallet = keys.PrivateKey(bytes.fromhex(secret_key))
     public_address = wallet.public_key.to_base58check_address()
     print("Public TRON address:", public_address)
-
