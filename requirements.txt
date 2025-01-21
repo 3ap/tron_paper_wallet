@@ -1,1 +1,1 @@
-tronpy
+tronpy[mnemonic]
