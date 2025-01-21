@@ -8,9 +8,17 @@ pip3 install -r requirements.txt
 ```
 
 ### Run the create_wallet.py
-**to generate new wallet** and save secret key to file `secret_key.txt`
+**to generate new wallet** and save secret key to file
+`secret_key.txt` and its mnemonic form into `mnemonic.txt`
 ```bash
 python3 create_wallet.py
+```
+
+### Run the create_secret_key_from_mnemonic.py
+**to restore existing wallet** from mnemonic words if it's what you
+saved on paper; script would create `secret_key.txt`
+```bash
+python3 create_secret_key_from_mnemonic.py
 ```
 
 ### Run the get_public_address.py
